@@ -22,3 +22,10 @@ module demo {
 terraform init
 terraform apply
 ```
+
+## Outputs
+
+| Name | Description |
+|------|-------------|
+| `cluster_name` | The name of the GKE cluster |
+| `cluster_location` | The location (region or zone) of the GKE cluster |
