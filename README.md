@@ -22,6 +22,18 @@ module demo {
 terraform init
 terraform apply
 ```
+### To get outputs, make output.tf file add code below:
+```
+output "cluster_name" {
+  description = "The name of the GKE cluster"
+  value       = google_container_cluster.primary.name
+}
+
+output "cluster_location" {
+  description = "The location (region or zone) of the GKE cluster"
+  value       = google_container_cluster.primary.location
+}
+```
 
 ## Outputs
 
